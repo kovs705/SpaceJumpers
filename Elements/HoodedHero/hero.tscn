@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=3 uid="uid://biwjxt46g1exq"]
+
+[ext_resource type="Texture2D" uid="uid://qxndj08d057y" path="res://Assets/Character/AnimationSheet_Character.png" id="1_07owj"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n8jio"]
+atlas = ExtResource("1_07owj")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q2jg2"]
+atlas = ExtResource("1_07owj")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8vgj8"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n8jio")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q2jg2")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ogfcf"]
+radius = 9.0
+
+[node name="HoodedHero" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_8vgj8")
+autoplay = "default"
+frame_progress = 0.682044
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(15, 18)
+shape = SubResource("CapsuleShape2D_ogfcf")

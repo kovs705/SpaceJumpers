@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://c0qgeearuxh8"]
+
+[ext_resource type="Texture2D" uid="uid://ds1u8wvryoj6a" path="res://Assets/Environment/tile_1.png" id="1_a8olc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bk8v1"]
+size = Vector2(29, 6)
+
+[node name="platform_tile_1" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(1.8125, 1)
+texture = ExtResource("1_a8olc")
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(14.5, 3)
+shape = SubResource("RectangleShape2D_bk8v1")

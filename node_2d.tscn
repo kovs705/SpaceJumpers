@@ -1,0 +1,44 @@
+[gd_scene load_steps=6 format=3 uid="uid://bq52t0hn3qwyg"]
+
+[ext_resource type="Texture2D" uid="uid://cu74ky4cbj0b0" path="res://Assets/Background/space.png" id="1_abdxe"]
+[ext_resource type="PackedScene" uid="uid://biwjxt46g1exq" path="res://Elements/HoodedHero/hero.tscn" id="2_bm87y"]
+[ext_resource type="Script" path="res://Elements/HoodedHero/hero.gd" id="3_731yd"]
+[ext_resource type="PackedScene" uid="uid://c0qgeearuxh8" path="res://Elements/Env/platforms/platform_tile_1.tscn" id="3_rhuo2"]
+[ext_resource type="PackedScene" uid="uid://bjkt2lt5tdm48" path="res://Elements/Env/platforms/ground.tscn" id="5_qs3tb"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_repeat = 2
+texture = ExtResource("1_abdxe")
+centered = false
+region_enabled = true
+region_rect = Rect2(0, 0, 256, 240)
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_bm87y")]
+position = Vector2(53, 178)
+script = ExtResource("3_731yd")
+
+[node name="platform_tile_1" parent="." instance=ExtResource("3_rhuo2")]
+position = Vector2(43, 134)
+
+[node name="platform_tile_2" parent="." instance=ExtResource("3_rhuo2")]
+position = Vector2(114, 113)
+
+[node name="platform_tile_3" parent="." instance=ExtResource("3_rhuo2")]
+position = Vector2(169, 89)
+
+[node name="platform_tile_4" parent="." instance=ExtResource("3_rhuo2")]
+position = Vector2(56, 73)
+
+[node name="platform_tile_5" parent="." instance=ExtResource("3_rhuo2")]
+position = Vector2(163, 16)
+
+[node name="platform_tile_6" parent="." instance=ExtResource("3_rhuo2")]
+position = Vector2(85, 32)
+
+[node name="platform_tile_7" parent="." instance=ExtResource("3_rhuo2")]
+position = Vector2(99, 180)
+
+[node name="ground" parent="." instance=ExtResource("5_qs3tb")]
+position = Vector2(0, 224)
