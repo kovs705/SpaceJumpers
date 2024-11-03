@@ -1,9 +1,17 @@
-[gd_scene load_steps=2 format=3 uid="uid://clx3oxtiswsuy"]
+[gd_scene load_steps=3 format=3 uid="uid://du1q27aylehnq"]
 
 [ext_resource type="Texture2D" uid="uid://djlwpxyabk51p" path="res://Assets/Environment/tree_1.png" id="1_0cobd"]
 
-[node name="Node2D" type="Node2D"]
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_llo6i"]
+height = 62.0
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_0cobd")
 centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(73, 31)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_llo6i")
