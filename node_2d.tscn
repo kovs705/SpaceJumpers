@@ -3,8 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://cu74ky4cbj0b0" path="res://Assets/Background/space.png" id="1_abdxe"]
 [ext_resource type="PackedScene" uid="uid://biwjxt46g1exq" path="res://Elements/HoodedHero/hero.tscn" id="2_bm87y"]
 [ext_resource type="Script" path="res://Elements/HoodedHero/hero.gd" id="3_731yd"]
-[ext_resource type="PackedScene" uid="uid://c0qgeearuxh8" path="res://Elements/Env/platforms/platform_tile_1.tscn" id="3_rhuo2"]
-[ext_resource type="PackedScene" uid="uid://bjkt2lt5tdm48" path="res://Elements/Env/platforms/ground.tscn" id="5_qs3tb"]
+[ext_resource type="PackedScene" uid="uid://c0qgeearuxh8" path="res://Elements/Env/platforms/platform_1/platform_tile_1.tscn" id="3_rhuo2"]
+[ext_resource type="PackedScene" uid="uid://bjkt2lt5tdm48" path="res://Elements/Env/platforms/ground_1/ground.tscn" id="5_qs3tb"]
 [ext_resource type="PackedScene" uid="uid://du1q27aylehnq" path="res://Elements/Env/Backgrounds/tree_back.tscn" id="6_ryx2x"]
 
 [node name="Node2D" type="Node2D"]

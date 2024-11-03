@@ -15,6 +15,10 @@ run/main_scene="res://node_2d.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://Assets/icon.svg"
 
+[autoload]
+
+GlobalEnv="*res://Elements/Env/global_env.gd"
+
 [display]
 
 window/size/viewport_width=256
