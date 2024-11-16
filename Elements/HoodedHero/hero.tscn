@@ -38,3 +38,7 @@ centered = false
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(15, 18)
 shape = SubResource("CapsuleShape2D_ogfcf")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(73, 31)
+rotation = 1.5708
