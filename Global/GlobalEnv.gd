@@ -1,3 +1,4 @@
+# GlobalEnv.gd
 extends CharacterBody2D
 
 const SPEED = 10.0
