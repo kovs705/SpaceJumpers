@@ -1,4 +1,11 @@
+#
+# Space Jumpers
 # ground.gd
+# 
+# Created by Eugene Kovs
+# https://github.com/kovs705
+#
+
 extends CharacterBody2D
 
 func _physics_process(delta: float) -> void:
