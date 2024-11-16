@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://bjkt2lt5tdm48"]
 
-[ext_resource type="Script" path="res://Elements/Env/platforms/ground_1/ground.gd" id="1_hkfkn"]
+[ext_resource type="Script" path="res://Elements/Environment/platforms/ground_1/ground.gd" id="1_hkfkn"]
 [ext_resource type="Texture2D" uid="uid://b7yqi55ylartc" path="res://Assets/Environment/ground.png" id="1_lwhs1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vp6s8"]
@@ -19,5 +19,7 @@ position = Vector2(128, 8)
 shape = SubResource("RectangleShape2D_vp6s8")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(128, 8)
+scale = Vector2(12.8, 0.8)
 
 [connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

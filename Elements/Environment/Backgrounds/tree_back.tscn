@@ -1,10 +1,13 @@
-[gd_scene load_steps=4 format=3 uid="uid://du1q27aylehnq"]
+[gd_scene load_steps=5 format=3 uid="uid://du1q27aylehnq"]
 
 [ext_resource type="Texture2D" uid="uid://djlwpxyabk51p" path="res://Assets/Environment/tree_1.png" id="1_0cobd"]
-[ext_resource type="Script" path="res://Elements/Env/Backgrounds/tree_back.gd" id="1_77uqr"]
+[ext_resource type="Script" path="res://Elements/Environment/Backgrounds/tree_back.gd" id="1_77uqr"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_llo6i"]
 height = 62.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wie1e"]
+size = Vector2(128, 16)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 script = ExtResource("1_77uqr")
@@ -19,5 +22,12 @@ rotation = 1.5708
 shape = SubResource("CapsuleShape2D_llo6i")
 
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
-position = Vector2(73, 31)
+position = Vector2(64.069, 74.0042)
 rotation = 1.5708
+scale = Vector2(7.4004, 6.40692)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
+light_mask = 3
+visibility_layer = 3
+position = Vector2(64, 140)
+shape = SubResource("RectangleShape2D_wie1e")
