@@ -33,6 +33,12 @@ window/stretch/aspect="keep_width"
 
 enabled=PackedStringArray("res://addons/AsepriteWizard/plugin.cfg")
 
+[layer_names]
+
+2d_physics/layer_1="environment"
+2d_physics/layer_2="hero"
+2d_physics/layer_3="platform"
+
 [rendering]
 
 textures/canvas_textures/default_texture_filter=3
