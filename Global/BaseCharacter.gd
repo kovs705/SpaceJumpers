@@ -1,5 +1,5 @@
 # BaseCharacter.gd
-# Used CharacterBody2D global methods across the project
+# Each global function 
 extends CharacterBody2D
 
 var speed: float = 100.0  # Default speed, can be overridden

@@ -17,7 +17,7 @@ config/icon="res://Assets/icon.svg"
 
 [autoload]
 
-GlobalEnv="*res://Global/global_env.gd"
+GlobalEnv="*res://Global/GlobalEnv.gd"
 
 [display]
 
