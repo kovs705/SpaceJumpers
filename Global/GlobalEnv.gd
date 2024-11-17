@@ -10,6 +10,7 @@ extends CharacterBody2D
 
 var SPEED: float = 10  # Default speed for env objects
 var points := 0 # Game points
+var game_started := false # when hero jumps on platform - switch to true
 
 func change_points(diff: int):
 	points += diff
