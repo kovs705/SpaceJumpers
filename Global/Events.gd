@@ -9,4 +9,4 @@
 extends Node
 
 signal jumped_on_platform()
-signal points_changed(diff: int)
+signal points_changed(point: int)
