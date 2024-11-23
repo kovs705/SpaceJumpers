@@ -30,12 +30,15 @@ layout_mode = 2
 
 [node name="Label" type="Label" parent="CanvasLayer/MarginContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
+text = "Platforms:"
 
 [node name="Control" type="Control" parent="CanvasLayer/MarginContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
+size_flags_horizontal = 3
 
 [node name="Label2" type="Label" parent="CanvasLayer/MarginContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
+text = "0"
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_repeat = 2
